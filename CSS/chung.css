@@ -1,0 +1,13 @@
+body
+{
+    background-color: skyblue;
+}
+
+*
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: white;
+}

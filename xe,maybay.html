@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Danh sách xe,máy bay</title>
+    <meta charset="utf-8" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/jquery-3.5.1.js"></script>
+
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        nav a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        const handleSelectClass = () => {
+            let select = document.getElementById("class");
+            let data = select.value.split(";");
+            //document.getElementById("txtClass").value = data[1];
+            document.getElementById("img").src = data[0];
+            //document.getElementById("txtImg").innerHTML = data[1];
+        }
+    </script>
+
+    <!-- <style>
+        [class*=col-]{
+            border:1px solid gray; 
+        }
+        .menu [class*=col-]{
+            border:none; 
+        }
+    </style>-->
+</head>
+
+<body style="background-color: gray;">
+
+    <nav class="navbar navbar-default col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width: 100%;">
+        <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="Images/Logo.jpg" style="height: 60px;width: 120px;">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <label style="color: black;line-height: 50px;">ShopTM</label>
+                </div>
+
+
+            </div>
+            <ul class="nav navbar-nav col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <li><a href="Danh Sach.html">
+                        Danh sách sản phẩm</a></li>
+                <li><a href="gioithieu.html">
+                        Giới thiệu</a></li>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Bố mẹ muốn tìm gì cho bé?" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="background-color: white;width: 97%;">
+        <form class="horizontal-form" style="margin-top:7%">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="margin-top: 7%;">
+                    <div><p class="text-justify">
+                        <a href="gioithieu.html">ShopTienMy</a> là chuỗi cửa hàng chuyên về đồ chơi lớn nhất Việt Nam cho tới thời
+                        điểm hiện tại.
+                        Chúng tôi luôn luôn lắng nghe khách hàng và cố gắng phục vụ khách hàng những dịch vụ tốt nhất.
+                        Cảm ơn bạn đã lựa chọn mua sắm tại cửa hàng của chúng tôi, chúc quý khách có một buổi mua sắm
+                        vui vẻ.
+                    </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-ol" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1.713 11.865v-.474H2c.217 0 .363-.137.363-.317 0-.185-.158-.31-.361-.31-.223 0-.367.152-.373.31h-.59c.016-.467.373-.787.986-.787.588-.002.954.291.957.703a.595.595 0 0 1-.492.594v.033a.615.615 0 0 1 .569.631c.003.533-.502.8-1.051.8-.656 0-1-.37-1.008-.794h.582c.008.178.186.306.422.309.254 0 .424-.145.422-.35-.002-.195-.155-.348-.414-.348h-.3zm-.004-4.699h-.604v-.035c0-.408.295-.844.958-.844.583 0 .96.326.96.756 0 .389-.257.617-.476.848l-.537.572v.03h1.054V9H1.143v-.395l.957-.99c.138-.142.293-.304.293-.508 0-.18-.147-.32-.342-.32a.33.33 0 0 0-.342.338v.041zM2.564 5h-.635V2.924h-.031l-.598.42v-.567l.629-.443h.635V5z"/>
+                          </svg> Danh mục sản phẩm</h4> 
+                    </div>
+                    <hr>
+                    <a href="bupbe.html"><div>
+                        1. Búp bê
+                    </div></a>
+                    <hr>
+                    <div>
+                        <a href="xe,maybay.html">2. Xe, máy bay</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="#">3. Xe trẻ em</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="#">4. Đồ chơi lắp ráp</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="#">5. Rô bốt, siêu nhân</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="#">6. Đồ chơi giáo dục</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="menu">
+                    <h3>Các sản phẩm nổi bật về xe, máy bay:</h3>
+                    <hr>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/xe1.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Đồ chơi Lambogini <br>
+                                Giá: 249.000 VND
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/mb1.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay F22 <br>
+                                Giá: 200.000 VND
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/xe2.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Xe đua <br>
+                                Giá: 129.000 VND
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/xeli.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Xe mô hình sành điệu <br>
+                                Giá: 219.000 VND
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/mb2.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay <br>
+                                Giá: 189.000 VND
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/xe3.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Xe hoạt hình <br>
+                                Giá: 100.000 VND
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/maybay.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay đồ chơi <br>
+                                Giá: 89.000 VND</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/mb3.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay  <br>
+                                Giá: 112.000 VND</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/xecapcuu.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Xe cấp cứu <br>
+                                Giá: 100.000 VND</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/mb4.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay trực thăng <br>
+                                Giá: 109.000 VND</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/Xecanhsat.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Xe cảnh sát <br>
+                                Giá: 99.000 VND</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><img src="Images/mb5.jpg" style="height:130px;width:130px" />
+                            <div>
+                                Máy bay hoạt hình <br>
+                                Giá: 99.000 VND</div>
+                        </a>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-danger" style="margin-left:41%; margin-top: 4%;">Xem thêm</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
+    <div class="container" style="background-color: white; width: 97%;">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+
+                <h3>Về Shop Tiến Mỹ</h3>
+                ShopTienmy.com.vn kinh doanh theo mô hình website trực tuyến kết hợp với hệ thống chuỗi
+                cửa hàng bán lẻ tại các thành phố lớn trên toàn quốc. Với phương châm "phục vụ khách hàng
+                bằng cả trái tim" Shop Tiến Mỹ luôn lấy khách hàng làm trung tâm cho mọi hoạt động để tạo
+                ra nhiều giá trị cộng đồng
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                    <h4>Tổng đài bán hàng</h4>
+                    <b>Hotline</b>: 1800 8881<br>
+                    <b>Đổi hàng,bảo hành,khiếu nại</b>: 1900 2221<br>
+                    <b>Email</b>: Shoptienmy@gmail.com
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <h4>Các chi nhánh</h4>
+                    <b>Hà Nội</b>: <br>
+                    22-76 Giải phóng, Đống Đa, Hà Nội.<br>
+                    294 Lạc Long Quân, Tây Hồ, Hà Nội.<br><br>
+                    <b>Thành phố Hồ Chí Minh</b>:<br>
+                    12 Bến Nghé, Quận 1 ,TP.Hồ Chí Minh.<br>
+                    1068 Nguyễn Văn Linh, Quận 7, TP.Hồ Chí Minh.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

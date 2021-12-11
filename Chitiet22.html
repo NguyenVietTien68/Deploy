@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chi tiết mặt hàng bộ trò chơi câu cá hai tầng</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../CSS/chung.css"> -->
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+
+
+    <script>
+        function mua() {
+            window.open('Dathang2.html');
+        }
+
+        function them() {
+            alert('Them thanh cong vao gio hang')
+        }
+
+        function Xoatrang() {
+            document.getElementById('textbl').value = "";
+        }
+        var count = 1;
+        function Gui() {
+            var bluan = document.getElementById('textbl').value;
+            if (bluan.length > 0) {
+
+                var tab = document.getElementById('table1');
+                var tr = tab.insertRow(count);
+                var data1 = tr.insertCell(0);
+                var data2 = tr.insertCell(1);
+
+                data1.innerHTML = count;
+                data2.innerHTML = bluan;
+                count++;
+                Xoatrang();
+            }
+            else {
+                alert('Bạn chưa nhập bình luận');
+
+            }
+
+
+
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("anhdong");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav a {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body style="background-color:grey;">
+    <nav class="navbar navbar-default col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width: 100%;">
+        <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="Images/Logo.png" style="height: 60px;width: 120px;">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <label style="color: black;line-height: 50px;">ShopTM</label>
+                </div>
+
+
+            </div>
+            <ul class="nav navbar-nav col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <li><a href="Danh Sach.html">
+                        Danh sách sản phẩm</a></li>
+                <li><a href="gioithieu.html">
+                        Giới thiệu</a></li>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Bố mẹ muốn tìm gì cho bé?" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    </div>
+    <div class="container" style="background-color:white; width: 96%;">
+
+
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <!-- <img src="Images/Cauca1.jpg" class="img-thumbnail" style="max-width: 100%;" id="img1"> -->
+                <div class="anhdong col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="Images/Cauca1.jpg" class="img-thumbnail" style="width:100%;">
+                </div>
+
+                <div class="anhdong col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+
+                    <img src="Images/cauca4.jpg" class="img-thumbnail" style="width:100%;">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <h3>Bộ đồ chơi câu cá cho bé 2 tầng</h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <a href="#binhluan">Bình luận</a>
+
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <label>Mã SP: DCN-501</label>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.024 3.797L4.499 7.56l-.448-.895 7.525-3.762.448.894zm-.448 9.3L4.051 9.335 4.5 8.44l7.525 3.763-.448.894z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-11-5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                        </svg>
+                    </div>
+
+
+                </div>
+                <hr>
+                <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" style="font-size: 15px;">
+                                Giá:
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                                <label style="color: orange;font-size: 30px;">165.000đ</label>
+                            </div>
+
+                        </div><br>
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" style="font-size: 15px;">
+                                Tình trạng:
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                                <label style="color: lime; font-size: 16px;">Còn hàng</label>
+                            </div>
+
+                        </div><br>
+
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" style="font-size: 15px;">
+                                Màu sắc:
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                                <input type="button" class="btn btn-lg" style="background-color: skyblue;"
+                                    onclick="currentSlide(1)">&nbsp;&nbsp;
+                                <input type="button" class="btn btn-lg" style="background-color: pink;"
+                                    onclick="currentSlide(2)">&nbsp;&nbsp;
+
+                            </div>
+
+                        </div><br><br><br><br><br>
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" style="font-size: 15px;">
+                                Vận chuyển:
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                                <b>Miễn phí vận chuyển </b>cho đơn hàng 100.000đ<br><br>
+                            </div>
+
+                        </div>
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <a class="btn btn-primary btn-lg btn-block" href="Dathang2.html">MUA NGAY
+
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <input type="button" value="THÊM VÀO GIỎ HÀNG" class="btn btn-warning btn-lg btn-block"
+                                    data-toggle="modal" data-target="#myModal"><br>
+
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade col-xs-12 col-sm-12 col-md-12 col-lg-12" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="row modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="row modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                                <div class="row">
+                                                    1 sản phẩm đã được thêm vào giỏ hàng
+                                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                        <img src="Images/Cauca1.jpg"
+                                                            style="width: 50px;height: 50px;">
+                                                    </div>
+                                                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                                        Bộ đồ chơi câu cá cho bé 2 tầng<br>
+                                                        Mã SP: DCN-501<br>
+                                                        165.000đ<br>
+                                                        Số lượng: 1 <br>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                                                style="border-left: 1px solid black;">
+                                                Thành tiền : 165.000đ
+
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <p style="font-size: 13px;">Tổng đài mua hàng miễn cước: <a style="color: red;">1800
+                                        6066
+                                    </a>(Từ 8h00 đến 21h30 hàng ngày)</p>
+                            </div>
+
+                        </div>
+                        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <a href="#">
+                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-geo-alt"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                    Xem địa chỉ cửa hàng gần bạn
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg></a><br><br>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                    <div class="row col-xs-1 col-sm-1 col-md-1 col-lg-1">
+
+                    </div>
+
+                </div>
+                <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-truck" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5v7h-1v-7a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5v1A1.5 1.5 0 0 1 0 10.5v-7zM4.5 11h6v1h-6v-1z" />
+                                <path fill-rule="evenodd"
+                                    d="M11 5h2.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5h-1v-1h1a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4.5h-1V5zm-8 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                <path fill-rule="evenodd"
+                                    d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                            </svg>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            Giao hàng toàn quốc
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-repeat"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z" />
+                            </svg>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            Đổi hàng 15 ngày miễn phí
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-check-circle"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            Đảm bảo hàng chính hãng
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>&nbsp;
+
+
+    </div><br>
+    <!-- <div class="container">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a href="#dacdiem" style="font-size: 18px;color: black;">Đặc điểm nổi bật</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#mota" style="font-size: 18px;color: black;"> Mô tả sản phẩm</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#binhluan" style="font-size: 18px;color: black;">Bình luận</a>
+                <br>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="container" style="width: 98%;">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid ">
+                    <ul class="nav navbar-nav " onscroll="">
+                        <li class="active"><a href="#dacdiem">Đặc điểm nổi bật</a></li>
+                        <li><a href="#mota">Mô tả sản phẩm</a></li>
+                        <li><a href="#binhluan">Bình luận</a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+    <div class="container" style="width: 98%;">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" style="background-color: white;">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label style="font-size: 18px;" id="dacdiem"> Đặc điểm nổi bật</label>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <ul>
+                                <li>Với thiết kế kiểu câu cá 2 tầng</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <ul>
+                                <li>Sử dụng pin AA</li>
+                                <li>Dành cho bé 3 tuổi trở lên</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label style="font-size: 18px;" id="mota">Mô tả Bộ đồ chơi câu cá cho bé 2 tầng</label>
+                        <p>
+                            <b>Bộ đồ chơi cho bé 2 tầng</b>tái hiện sinh động và chân thật nhất trò chơi câu cá
+                            trong hồ đầy thú vị. Với bộ đồ chơi câu bằng nam châm, với 4 cần câu và 26 con cá,
+                            các bé sẽ tha hồ trải nghiệm cảm giác thật với sự khéo léo và chính xác của mình đồng
+                            thời cạnh tranh câu nhanh thi đua cùng bạn bè.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                                <img src="Images/Cauca1.jpg" style="max-width:90%;" class="img-thumbnail">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="font-size: 18px;">
+                                <i>Đồ chơi câu cá dành cho bé</i>
+                            </div>
+
+                        </div><br>
+                        <h4><label>Điểm nổi bật của bộ đồ chơi câu cá cho bé 2 tầng:</label></h4><br>
+                        <p style="font-size: 16px;">
+                            - Bộ đồ chơi (4 cần câu + 16 con cá to và 10 con cá nhỏ) cho bé trải nghiệm cảm giác câu cá
+                            thú vị cùng bạn bè, người thân.<br>
+                            - Kích thích khả năng khéo léo và nhanh nhẹn của trẻ.<br>
+                            - Sản phẩm làm bằng chất liệu nhựa cao cấp, màu sắc tươi vui.<br>
+                            - Sản phẩm thích hợp làm quà tặng cho bé từ 3 tuổi trở lên.<br>
+                            - Xuất xứ: Trung Quốc.<br>
+                            - Quy cách sản phẩm: * Gồm: Có 26 con cá và 4 cần câu, cho 4 người chơi.<br>
+                            - Máy chạy bằng 3 pin AA.<br>
+                            - Chất liệu: Nhựa.<br><br>
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                                <img src="Images/cauca2.jpg" class="img-thumbnail" style="max-width:90%;">
+                            </div>
+
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <img src="Images/Cauca3.jpg" class="img-thumbnail" style="max-width:100%;">
+                            </div>
+
+
+                        </div><br>
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="font-size: 18px;">
+                                <i>Một số hình ảnh</i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label style="font-size: 18px;" id="binhluan">
+                            Bình luận đánh giá sản phẩm
+                        </label>
+                        <textarea rows="6" class="form-control" id="textbl"
+                            placeholder="Xin nhập vào bình luận"></textarea><br>
+                        <input type="button" value="Gửi" class="btn btn-info btn-lg" style="float: right;"
+                            onclick="Gui()">
+                    </div>
+
+                </div><br>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <table class="table table-hover" id="table1">
+                            <tr>
+                                <th>STT</th>
+                                <th>Binh luan</th>
+
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                &nbsp;
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" style="background-color: white;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: 18px;">Sản phẩm tương
+                    tự</label>
+                <hr>
+
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="Images/caucatuongtu1.jpg" style="max-width: 100%;">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+
+                        <a href="#" style="color: black;">Bộ đồ chơi câu cá gỗ có nam châm</a>
+                        <p style="color: red;">180.000đ</p>
+
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="Images/Caucatuongtu2.jpg" style="max-width: 100%;">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+
+                        <a href="#" style="color: black;">Vỉ đồ chơi câu cá có nam châm</a>
+                        <p style="color: red;">220.000đ</p>
+
+                    </div>
+                </div><br>
+
+            </div>
+        </div>
+
+    </div><br><br><br>
+    <div class="container" style="background-color: white;width: 97%;">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+
+                <h3>Về Shop Tiến Mỹ</h3>
+                ShopTienmy.com.vn kinh doanh theo mô hình website trực tuyến kết hợp với hệ thống chuỗi
+                cửa hàng bán lẻ tại các thành phố lớn trên toàn quốc. Với phương châm "phục vụ khách hàng
+                bằng cả trái tim" Shop Tiến Mỹ luôn lấy khách hàng làm trung tâm cho mọi hoạt động để tạo
+                ra nhiều giá trị cộng đồng
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                    <h4>Tổng đài bán hàng</h4>
+                    <b>Hotline:</b> 1800 8881<br>
+                    <b>Đổi hàng,bảo hành,khiếu nại:</b> 1900 2221<br>
+                    <b>Email:</b> Shoptienmy@gmail.com
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <h4>Các chi nhánh</h4>
+                    <b>Hà Nội:</b> <br>
+                    22-76 Giải phóng, Đống Đa, Hà Nội.<br>
+                    294 Lạc Long Quân, Tây Hồ, Hà Nội.<br><br>
+                    <b>Thành phố Hồ Chí Minh:</b><br>
+                    12 Bến Nghé, Quận 1 ,TP.Hồ Chí Minh.<br>
+                    1068 Nguyễn Văn Linh, Quận 7, TP.Hồ Chí Minh.
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
